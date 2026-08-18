@@ -1,0 +1,271 @@
+{
+  "height_default_platform": {
+    "type": "string",
+    "default": "mango",
+    "hint": "默认身高查询平台，可选值: mango / ovoav / yingtian"
+  },
+  "height_enable_mango": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用芒果平台身高查询"
+  },
+  "height_enable_ovoav": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用独角兽平台身高查询"
+  },
+  "height_enable_yingtian": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用应天平台身高查询"
+  },
+  "height_mango_url": {
+    "type": "string",
+    "default": "https://api.mangotool.cn/sky/out/cn",
+    "hint": "芒果工具身高查询 API 地址"
+  },
+  "mango_key": {
+    "type": "string",
+    "default": "",
+    "hint": "芒果工具(mangotool.cn) API 密钥，获取方式: https://mangotool.cn/openAPI （留空则芒果平台身高查询不可用）"
+  },
+  "height_ovoav_url": {
+    "type": "string",
+    "default": "https://ovoav.com/api/sky/sgwz/sgv1",
+    "hint": "独角兽平台身高查询 API 地址"
+  },
+  "ovoav_key": {
+    "type": "string",
+    "default": "",
+    "hint": "独角兽(ovoav.com) API 密钥，获取方式: https://ovoav.com ；身高(独角兽)/任务/大蜡烛/复刻先祖/每日魔法/季蜡/日历/红石/服务器状态/光翼查询 共用此 key （留空则上述功能不可用）"
+  },
+  "height_yingtian_url": {
+    "type": "string",
+    "default": "https://api.t1qq.com/api/sky/sc/sg",
+    "hint": "应天平台身高查询 API 地址"
+  },
+  "yingtian_key": {
+    "type": "string",
+    "default": "",
+    "hint": "应天(api.t1qq.com) API 密钥，获取方式: https://api.t1qq.com （留空则应天平台身高查询不可用）"
+  },
+  "height_timeout": {
+    "type": "int",
+    "default": 15,
+    "hint": "身高 API 请求超时时间（秒）"
+  },
+  "task_url": {
+    "type": "string",
+    "default": "https://ovoav.com/api/sky/rwtp/rwt",
+    "hint": "每日任务图片 API 地址"
+  },
+  "task_timeout": {
+    "type": "int",
+    "default": 15,
+    "hint": "任务 API 请求超时时间（秒）"
+  },
+  "candle_url": {
+    "type": "string",
+    "default": "https://ovoav.com/api/sky/dlzwz/dl",
+    "hint": "大蜡烛位置 API 地址"
+  },
+  "candle_timeout": {
+    "type": "int",
+    "default": 15,
+    "hint": "大蜡烛 API 请求超时时间（秒）"
+  },
+  "ancestor_url": {
+    "type": "string",
+    "default": "https://ovoav.com/api/sky/fkxz/xz",
+    "hint": "复刻先祖位置 API 地址"
+  },
+  "ancestor_timeout": {
+    "type": "int",
+    "default": 15,
+    "hint": "复刻先祖 API 请求超时时间（秒）"
+  },
+  "magic_url": {
+    "type": "string",
+    "default": "https://ovoav.com/api/sky/mftp/mf",
+    "hint": "每日魔法 API 地址"
+  },
+  "magic_timeout": {
+    "type": "int",
+    "default": 15,
+    "hint": "每日魔法 API 请求超时时间（秒）"
+  },
+  "season_candle_url": {
+    "type": "string",
+    "default": "https://ovoav.com/api/sky/jlwz/jl",
+    "hint": "每日季蜡位置 API 地址"
+  },
+  "season_candle_timeout": {
+    "type": "int",
+    "default": 15,
+    "hint": "季蜡 API 请求超时时间（秒）"
+  },
+  "calendar_url": {
+    "type": "string",
+    "default": "https://ovoav.com/api/sky/rltp/rl",
+    "hint": "光遇日历 API 地址"
+  },
+  "calendar_timeout": {
+    "type": "int",
+    "default": 15,
+    "hint": "日历 API 请求超时时间（秒）"
+  },
+  "redstone_url": {
+    "type": "string",
+    "default": "https://ovoav.com/api/sky/hstp/hs",
+    "hint": "红石位置 API 地址"
+  },
+  "redstone_timeout": {
+    "type": "int",
+    "default": 15,
+    "hint": "红石 API 请求超时时间（秒）"
+  },
+  "skytest_url": {
+    "type": "string",
+    "default": "https://ovoav.com/api/sky/gyzt/zt",
+    "hint": "服务器状态测试 API 地址"
+  },
+  "skytest_timeout": {
+    "type": "int",
+    "default": 15,
+    "hint": "服务器状态 API 请求超时时间（秒）"
+  },
+  "enable_height_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用身高查询功能"
+  },
+  "enable_task_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用任务查询功能"
+  },
+  "enable_candle_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用大蜡烛查询功能"
+  },
+  "enable_ancestor_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用复刻先祖查询功能"
+  },
+  "enable_magic_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用每日魔法查询功能"
+  },
+  "enable_season_candle_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用季蜡查询功能"
+  },
+  "enable_calendar_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用日历查询功能"
+  },
+  "enable_redstone_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用红石查询功能"
+  },
+  "enable_skytest_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用服务器状态查询功能"
+  },
+  "enable_all_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用一键汇总查询功能"
+  },
+  "enable_season_progress_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用季节进度查询（当前季节剩余时间、毕业所需天数）"
+  },
+  "enable_debris_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用碎石信息/碎石日历查询"
+  },
+  "enable_grandma_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用老奶奶用餐时间查询"
+  },
+  "enable_sacrifice_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用献祭信息（伊甸之眼）查询"
+  },
+  "enable_wing_query": {
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用光翼查询/统计与光遇ID绑定功能"
+  },
+  "resources_base": {
+    "type": "string",
+    "default": "https://ghfast.top/https://raw.githubusercontent.com/A-Kevin1217/resources/master/resources",
+    "hint": "光遇公共数据资源源（季节进度/复刻先祖 JSON），如被墙可换用其他 GitHub 镜像"
+  },
+  "wing_query_url": {
+    "type": "string",
+    "default": "https://ovoav.com/api/sky/gycx/gka",
+    "hint": "光翼（个人收集进度）查询 API 地址；使用 ovoav_key 作为密钥"
+  },
+  "wing_stats_url": {
+    "type": "string",
+    "default": "https://s.166.net/config/ds_yy_02/ma75_wing_wings.json",
+    "hint": "全图光翼统计 API 地址"
+  },
+  "push_platform": {
+    "type": "string",
+    "default": "aiocqhttp",
+    "hint": "定时推送使用的平台标识（用于构造消息来源，如 aiocqhttp / wecom / telegram）"
+  },
+  "enable_daily_task_push": {
+    "type": "bool",
+    "default": false,
+    "hint": "是否在 daily_task_push_time 自动推送每日任务图片（需配置 push_groups）"
+  },
+  "daily_task_push_time": {
+    "type": "string",
+    "default": "08:00",
+    "hint": "每日任务/碎石推送时间，格式 HH:MM"
+  },
+  "push_groups": {
+    "type": "list",
+    "default": [],
+    "hint": "接收定时推送的群组ID列表（UMO格式，如 aiocqhttp:GroupMessage:123456），留空则不推送",
+    "items": {
+      "type": "string"
+    }
+  },
+  "enable_grandma_reminder": {
+    "type": "bool",
+    "default": false,
+    "hint": "是否开启老奶奶用餐提醒（用餐前5分钟推送，需配置 push_groups）"
+  },
+  "enable_sacrifice_reminder": {
+    "type": "bool",
+    "default": false,
+    "hint": "是否开启献祭刷新提醒（每周六00:00推送，需配置 push_groups）"
+  },
+  "enable_debris_reminder": {
+    "type": "bool",
+    "default": false,
+    "hint": "是否开启每日碎石提醒（与每日任务同时推送，需配置 push_groups）"
+  },
+  "llm_provider_id": {
+    "type": "string",
+    "default": "",
+    "hint": "用于自然语言交互的 LLM Provider ID；留空则使用会话默认 Provider。配置后可对光遇问题用自然语言触发查询",
+    "_special": "select_provider"
+  }
+}
